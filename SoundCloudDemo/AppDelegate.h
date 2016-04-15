@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SoundCloud.h"
+#import "AudioPlayer.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) SoundCloud *soundCloud;
+@property (strong, nonatomic) AudioPlayer *player;
 
++ (AppDelegate *)instance;
 
 @end
 
